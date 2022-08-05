@@ -1,0 +1,20 @@
+body {
+  background-color: #808;
+  color: #ff0;
+  font-family: "Comic Sans", sans-serif;
+}
+
+input {
+  width: 500px;
+}
+
+div {
+  border-color: white;
+  border-width: 5px;
+}
+
+p {
+  border-color: aqua;
+  border-width: 5px;
+  color:aliceblue;
+}

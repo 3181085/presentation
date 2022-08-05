@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getIntruduction</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="csvToArr.js"></script>
+    <script src="sort.js"></script>
+    <script src="getIntro.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Greeting</h1>
+    <p>ゲストの名前を入力してください</p>
+    <p> カンマ(,)で区切ってください </p>
+    <input type="text" id="guestName"></input>
+    <p></p>
+    <button type="button" name="array" onclick="arrayClick()">csv to array</button>
+    <button type="button" name="sort" onclick="sortClick()">sort</button>
+    <button type="button" name="ingroduction" onclick="greetClick()">Introduction</button>
+    <div id="display"></div>
+  </body>
+</html>
