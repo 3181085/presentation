@@ -8,17 +8,22 @@
     <script src="csvToArr.js"></script>
     <script src="sort.js"></script>
     <script src="getIntro.js"></script>
+    <script src="country.js"></script>
     <script src="script.js"></script>
   </head>
-  <body>
-    <h1>Greeting</h1>
-    <p>ゲストの名前を入力してください</p>
-    <p> カンマ(,)で区切ってください </p>
+  <body onload="initFunc()">
+    <h1>Hello, World and Greeing.<a href="" onclick="test(); return false;">Test</a></h1>
+    <h2>Input guest names with CSV and click "SUBMIT" </h2>
+    <h3>ゲスト名をCSVで入力しSUBMITを押下。 </h3>
     <input type="text" id="guestName"></input>
+    <button type="button" name="submit" onclick="submitClick()">SUBMIT</button>
     <p></p>
-    <button type="button" name="array" onclick="arrayClick()">csv to array</button>
+    <select name="select" id="countries"></select> 
+    <button type="button" name="array" onclick="arrayClick()">array</button>
     <button type="button" name="sort" onclick="sortClick()">sort</button>
-    <button type="button" name="ingroduction" onclick="greetClick()">Introduction</button>
+    <button type="button" name="filter" onclick="filterClick()">filter</button>
+    <button type="button" name="map" onclick="mapClick()">map</button>
+    <button type="button" name="introduction" onclick="introductionClick()">Introduction</button>
     <div id="display"></div>
   </body>
 </html>
