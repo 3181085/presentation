@@ -1,3 +1,5 @@
+/* Mod 2022.08.06. */
+
 'use strict'
 
 /*
@@ -22,6 +24,9 @@ function csvToArr(str) {
         retArray.push(tmp.trim());
         index = pos;
    }
-console.log(retArray);
+
     return retArray;
 }
+
+
+/* EOF */
