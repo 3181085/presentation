@@ -1,3 +1,5 @@
+/* Mod: 2022.08.06　*/
+
 'use strict'
 // 1行目に記載している 'use strict' は削除しないでください
 
@@ -13,18 +15,21 @@
  * @returns {Array<number>} 与えられた配列の要素を昇順に並べた新しい配列
  */
 function sort(array) {
-
+  let retArray = [];
   let i, j, tmp;
+
+  for (let element of array)
+    retArray.push(element);
 
   for (i=0; i<array.length-1; i++)
     for (j=0; j<array.length-1-i; j++)
-      if (array[j] > array[j+1]) {
-        tmp = array[j];
-        array[j] = array[j+1];
-        array[j+1] = tmp;
+      if (retArray[j] > retArray[j+1]) {
+        tmp = retArray[j];
+        retArray[j] = retArray[j+1];
+        retArray[j+1] = tmp;
       }
 
-  return array;
+  return retArray;
 }
 
 
